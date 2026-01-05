@@ -1,0 +1,117 @@
+ /* ---------- GENERAL LAYOUT ---------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* ---------- TITLE ---------- */
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- FORM STYLING ---------- */
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cityname {
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+input[type="text"] {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    width: 220px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: scale(1.05);
+}
+
+/* ---------- WEATHER CARD ---------- */
+#weatherResult {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-top: 30px;
+    padding: 30px;
+    width: 320px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+}
+
+#weatherResult:hover {
+    transform: translateY(-5px);
+}
+
+/* ---------- WEATHER CONTENT ---------- */
+#weatherResult h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+    color: #fff;
+
+}
+#weatherResult p {
+    font-size: 18px;
+    margin: 8px 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+
+
+
