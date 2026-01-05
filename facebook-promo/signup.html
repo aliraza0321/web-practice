@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <link rel="stylesheet" href="style2.css">
+ 
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Facebook Signup</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Create a new account</h2>
+      <form action="facebook.html">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" required>
+
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" required>
+
+        <label for="number">Mobile Number or Email</label>
+        <input type="text" id="number" name="number" placeholder="Enter your email or phone" required>
+
+        <label for="newpassword">New Password</label>
+        <input type="password" id="newpassword" name="newpassword" placeholder="Create a password" required>
+
+        <label for="birthday">Birthday</label>
+        <input type="date" id="birthday" name="birthday" required>
+
+        <div class="radio-group">
+          <label for="gender">Gender</label><br>
+           Male<input type="radio" id="male" name="gender" value="male" required>
+          Female<input type="radio" id="female" name="gender" value="female" required>
+         custom <input type="radio" id="custom" name="gender" value="custom" required>
+        </div>
+
+        <button class="button">Register</button>
+       
+      </form>
+       <a href="facebook.html"><button class="button " id="back">Sign in Page</button></a>
+
+    </div>
+  </main>
+</body>
+
+</html>
