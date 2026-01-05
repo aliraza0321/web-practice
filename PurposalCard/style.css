@@ -1,0 +1,83 @@
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ffdde1, #ee9ca7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    padding: 40px 60px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+  }
+.card:hover {
+    box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+    transform: translateY(-10px);
+  }
+  h2 {
+    color: #ff4081;
+    margin-bottom: 25px;
+  }
+
+  button {
+    border: none;
+    background: #ff4081;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 25px;
+    padding: 10px 25px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #ff79a6;
+    transform: scale(1.1);
+  }
+
+  .balloon {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    background: #ff4081;
+    opacity: 0.9;
+    animation: float 5s linear infinite;
+  }
+
+  @keyframes float {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-120vh) scale(1.2); opacity: 0; }
+  }
+
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    opacity: 0.8;
+    animation: fall 3s linear forwards;
+  }
+
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh) rotate(720deg);
+      opacity: 0;
+    }
+  }
