@@ -1,0 +1,206 @@
+﻿header{
+    display: flex;
+    justify-content: center;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url(3.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    animation: fadeup 3s ease-out 0s 1 ;
+
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: x-large;
+}
+#name{
+    color: aqua;
+    font-size: xx-large;
+    
+}
+nav ul li{
+    padding: 10px;
+
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(139, 139, 34);
+    padding-top: 10px;
+    
+
+}
+button{
+    background-color: greenyellow;
+    border-radius: 10px;
+    font-size: large;
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+}
+header button:hover{
+   transform: scale(1.03);
+   background-color: antiquewhite;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: aqua;
+    text-decoration-thickness: 3px;
+   
+    color: white;
+  
+    
+    
+}
+
+
+#Skills{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#Skills h1{
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+.main{
+animation: fadeup 3s ease-out 0s 1 ;
+}
+@keyframes fadeup {
+    0%{
+        opacity: 0;
+        transform:translateY(30);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#Home form{
+    margin-top: 90px;
+    width: 30%;
+    background-color: rgba(8, 8, 8, 0.3);
+    border-radius: 6px;
+    text-align: center;
+    height: 300px;
+
+
+    
+}
+input{
+    width: 80%;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: large;
+    background-color:rgba(8, 8, 8, 0.3); 
+    border-style: none;
+    padding: 10px;
+
+   
+
+}
+form h1{
+    font-size: medium;
+    color: greenyellow;
+    padding: 30px;
+
+}
+form button{
+    width: 100%;
+    margin-bottom: 10px;
+    border-style: none;
+
+}
+form button:hover{
+    background-color: blue;
+}
+
+#Home{
+    display: flex;
+
+}
+.homepart{
+    width: 60%;
+
+}
+.homepart {
+    height: 80vh;
+    padding-top: 10vh;
+    font-size: xx-large;
+}
+.homepart button{
+    margin-top: 80px;
+}
+.homepart button:hover{
+    transform: scale(1.02);
+    background-color: aqua;
+}
+.homepart button:active{
+    
+    transform: scale(1.06);
+}
+#Skills ul{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+}
+#Skills ul li{
+    background-color: beige;
+    list-style: none;
+    border-radius: 50px;
+    font-size: x-large;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Skills ul li:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.05);
+}
+#Contact form{
+    border-radius: 7px ;
+    border: 5px solid white;
+    background-color: rgb(190, 204, 212);
+    width: 50%;
+    height: 350px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+.contactus{
+    font-size: 50px;
+}
+#Contact form label{
+    align-items: center;
+}
+#Contact form textarea{
+    width: 80%;
+    border-radius: 7px;
+    background-color:rgba(8, 8, 8, 0.3) 
+}
+#Contact form button{
+    width: 80%;
+}
+#Contact form input:active{
+    background-color: rgb(238, 245, 250);
+}
