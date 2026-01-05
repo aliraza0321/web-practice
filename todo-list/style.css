@@ -1,0 +1,27 @@
+﻿.container{
+    background-color: beige;
+    width: 50%;
+    border: 3px solid black;
+   border-radius: 20px;
+
+
+
+}
+body{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+.list{
+    color: red;
+    background-color: ghostwhite;
+    
+}
+.list>li{
+    list-style-type: none;
+    background-color: aqua;
+    margin: 5px;
+    border-radius: 5px;
+    
+}
