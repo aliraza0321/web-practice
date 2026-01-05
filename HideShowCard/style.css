@@ -1,0 +1,76 @@
+﻿body{
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.div{
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px grey;
+    background-color: rgba(0, 0, 0, 0.3);
+
+    
+}
+.div:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+.div:active{
+    transform: scale(0.9);
+    transition: all 0.1s ease-in-out;
+    
+}
+.btn{
+    position: absolute;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+    color: lightblue;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px grey;
+}
+button:hover{
+    background-color: lightgrey;
+    color: darkblue;
+}
+button:active{
+    transform: scale(0.95);
+    transition: all 0.1s ease-in-out;
+}
+button:focus{
+    outline: none;
+    box-shadow: 0 0 5px darkblue;
+}
+button#show{
+    background-color: #4CAF50;
+    color: white;
+}
+button#show:hover{
+    background-color: #45a049;
+
+}
+button#hidden{
+    background-color: #f44336;
+    color: white;
+}
+button#hidden:hover{
+    background-color: #da190b;
+
+}
